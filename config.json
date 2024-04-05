@@ -1,0 +1,17 @@
+{
+    "mainBranch": "develop",
+    "currentBranch": "",
+    "controller": {
+        "initialPath": "",
+        "suffix": "Controller"
+    },
+    "services": {
+        "suffix": "Handler"
+    },
+    "models": {
+        "suffix": "ViewModel"
+    },
+    "repositories": {
+        "suffix": "Repository"
+    }
+}

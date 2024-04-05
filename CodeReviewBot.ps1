@@ -1,5 +1,14 @@
 $configPath = './config.json'
-$configJson = Get-Content config.json | ConvertFrom-Json
-echo $configJson.mainBranch
+$config = Get-Content $configPath | ConvertFrom-Json
 
-git diff --name-status main
+$allowedSuffix = $config.models.allowedSuffix;
+$path = $config.models.path;
+
+#WrongNamingRule
+$wrongNamedFiles = 
+    git diff --name-status $config.targetBranch |
+            Select-String -Pattern "[^0]+(?=$path)+(?=(?!.*$allowedSuffix.cs$))"
+
+Clear-Host
+Write-Host "   Wrong Named Models   " -ForegroundColor white -BackgroundColor darkred
+Write-Host $wrongNamedFiles -ForegroundColor darkred 

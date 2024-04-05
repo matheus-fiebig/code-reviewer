@@ -1,17 +1,22 @@
 {
-    "mainBranch": "develop",
-    "currentBranch": "",
-    "controller": {
-        "initialPath": "",
-        "suffix": "Controller"
-    },
-    "services": {
-        "suffix": "Handler"
-    },
+    "debugMode": true,
+    "targetBranch": "develop",
+    
+    "allowEmptyFiles": true,
+    "allowEmptyConstructor": true,
+    "allowNotConscisePackageName": true,
+    "allowSkippingUnitTest": true,
+    "allowPrWithoutUnitTest": true,
+
     "models": {
-        "suffix": "ViewModel"
+        "path": "test/models/",
+        "allowedSuffix": "ViewModel"
     },
-    "repositories": {
-        "suffix": "Repository"
-    }
+    "namingRules": [
+        {
+            "title": "Models",
+            "path": "test/models",
+            "allowedSuffix": "ViewModel"
+        }
+    ]
 }

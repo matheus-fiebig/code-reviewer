@@ -18,5 +18,11 @@
             "path": "test/models",
             "allowedSuffix": "ViewModel"
         }
+    ],
+    "ignoreRulesFor":[
+
+    ],
+    "customerWarnings": [
+
     ]
 }

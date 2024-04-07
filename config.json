@@ -1,28 +1,17 @@
 {
-    "debugMode": true,
     "targetBranch": "develop",
-    
-    "allowEmptyFiles": true,
-    "allowEmptyConstructor": true,
-    "allowNotConscisePackageName": true,
     "allowSkippingUnitTest": true,
-    "allowPrWithoutUnitTest": true,
-
-    "models": {
-        "path": "test/models/",
-        "allowedSuffix": "ViewModel"
-    },
+    "enforceEmptyConstructor": false,
     "namingRules": [
         {
             "title": "Models",
             "path": "test/models",
             "allowedSuffix": "ViewModel"
+        },
+        {
+            "title": "Services",
+            "path": "test/services",
+            "allowedSuffix": "Service"
         }
-    ],
-    "ignoreRulesFor":[
-
-    ],
-    "customerWarnings": [
-
     ]
 }

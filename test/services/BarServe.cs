@@ -5,16 +5,11 @@ using System.Threading.Tasks;
 
 namespace test.services
 {
-    public class FooService
+    public class BarServe
     {
-        [Fact(Skip = "asad")]
-        public void TestName()
+        public BarServe()
         {
-            // Given
 
-            // When
-
-            // Then
         }
     }
 }

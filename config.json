@@ -1,17 +1,12 @@
 {
-    "mainBranch": "develop",
-    "currentBranch": "",
-    "controller": {
-        "initialPath": "",
-        "suffix": "Controller"
-    },
-    "services": {
-        "suffix": "Handler"
-    },
-    "models": {
-        "suffix": "ViewModel"
-    },
-    "repositories": {
-        "suffix": "Repository"
-    }
+    "targetBranch": "develop",
+    "allowSkippingUnitTest": true,
+    "enforceEmptyConstructor": false,
+    "namingRules": [
+        {
+            "title": "Services",
+            "path": "test/services",
+            "allowedSuffix": "Service"
+        }
+    ]
 }

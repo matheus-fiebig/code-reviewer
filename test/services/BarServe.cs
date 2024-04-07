@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace test.models
+namespace test.services
 {
-    public class FooRequestViewModel
+    public class BarServe
     {
-        
+        public BarServe()
+        {
+
+        }
     }
 }

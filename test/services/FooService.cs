@@ -7,6 +7,14 @@ namespace test.services
 {
     public class FooService
     {
-        
+        [Fact(Skip = "asad")]
+        public void TestName()
+        {
+            // Given
+
+            // When
+
+            // Then
+        }
     }
 }

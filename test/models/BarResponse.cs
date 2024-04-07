@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace test.models
 {
-    public class FooViewModel
+    public class BarResponse
     {
-        
+
     }
 }

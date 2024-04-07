@@ -11,7 +11,7 @@ $cdFiles = git diff --name-status $config.targetBranch |
 foreach ($namingRule in $config.namingRules)
 {
     $title = $namingRule.title
-    Write-Host "   Wrong Named $title  " -ForegroundColor white -BackgroundColor darkred
+    Write-Host "   Wrong named $title  " -ForegroundColor white -BackgroundColor darkred
     
     $path = $namingRule.path
     $allowedSuffix = $namingRule.allowedSuffix
@@ -56,4 +56,3 @@ if(!$config.allowSkippingUnitTest)
     
     Write-Host "`n`t$skippedTests`n   " -ForegroundColor darkred
 }
-

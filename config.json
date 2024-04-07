@@ -4,11 +4,6 @@
     "enforceEmptyConstructor": false,
     "namingRules": [
         {
-            "title": "Models",
-            "path": "test/models",
-            "allowedSuffix": "ViewModel"
-        },
-        {
             "title": "Services",
             "path": "test/services",
             "allowedSuffix": "Service"
